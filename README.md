@@ -143,8 +143,9 @@ AFRICOACH AI is being developed using modern web technologies.
 ### Frontend
 
 * **React**
-* **JavaScript**
+* **TypeScript**
 * **Vite**
+* **Tailwind CSS**
 * **HTML5**
 * **CSS3**
 
