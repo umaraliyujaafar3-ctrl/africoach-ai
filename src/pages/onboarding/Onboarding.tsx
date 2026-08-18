@@ -276,7 +276,7 @@ function CvStep() {
         />
         {store.cvFileName ? (
           <>
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600">
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-50 text-teal-600">
               <FileText className="h-6 w-6" aria-hidden="true" />
             </span>
             <p className="mt-4 text-sm font-semibold text-ink-900">{store.cvFileName}</p>
@@ -427,7 +427,7 @@ function SuccessScreen({ onDone }: { onDone: () => void }) {
         {pieces.map((_, i) => {
           const left = 10 + ((i * 53) % 80)
           const delay = (i % 6) * 0.12
-          const color = ['bg-sunrise-400', 'bg-emerald-400', 'bg-sky-400', 'bg-amber-400'][i % 4]
+          const color = ['bg-sunrise-400', 'bg-teal-400', 'bg-sky-400', 'bg-amber-400'][i % 4]
           return (
             <motion.span
               key={i}
@@ -445,7 +445,7 @@ function SuccessScreen({ onDone }: { onDone: () => void }) {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ ...spring, delay: 0.1 }}
-        className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lift"
+        className="flex h-20 w-20 items-center justify-center rounded-full bg-teal-500 text-white shadow-lift"
       >
         <Check className="h-10 w-10" aria-hidden="true" />
       </motion.span>

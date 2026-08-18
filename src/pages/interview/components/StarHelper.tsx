@@ -29,7 +29,7 @@ const STAR_ELEMENTS = [
   {
     letter: 'R',
     title: 'Result',
-    color: 'bg-emerald-500',
+    color: 'bg-teal-500',
     prompt: 'What was the outcome? Add numbers if you can.',
     placeholder: 'e.g. We delivered two weeks early and I got a 92% score…',
   },

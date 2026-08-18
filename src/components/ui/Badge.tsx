@@ -9,7 +9,7 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 
 const toneClasses: Record<Tone, string> = {
   primary: 'bg-sunrise-50 text-sunrise-700 ring-sunrise-200',
-  success: 'bg-emerald-50 text-emerald-700 ring-emerald-200',
+  success: 'bg-teal-50 text-teal-700 ring-teal-200',
   warning: 'bg-amber-50 text-amber-700 ring-amber-200',
   danger: 'bg-red-50 text-red-700 ring-red-200',
   neutral: 'bg-ink-50 text-ink-600 ring-ink-200',

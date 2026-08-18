@@ -27,7 +27,7 @@ export function AuthLayout({ children }: { children: ReactNode }) {
 
       <div className="relative hidden w-1/2 overflow-hidden bg-ink-950 lg:block">
         <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-sunrise-500/25 blur-3xl" aria-hidden="true" />
-        <div className="pointer-events-none absolute bottom-0 -left-24 h-96 w-96 rounded-full bg-emerald-500/15 blur-3xl" aria-hidden="true" />
+        <div className="pointer-events-none absolute bottom-0 -left-24 h-96 w-96 rounded-full bg-teal-500/15 blur-3xl" aria-hidden="true" />
         <div className="relative flex h-full flex-col items-center justify-center px-16 text-center">
           <div className="rounded-3xl border border-ink-700/60 bg-ink-900/60 p-8 shadow-lift backdrop-blur">
             <p className="text-2xl font-medium leading-relaxed text-white">

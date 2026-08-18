@@ -3,7 +3,7 @@ import { X } from 'lucide-react'
 import { useToastStore, toastIcons } from '@/store/toast'
 
 const typeStyles = {
-  success: 'text-emerald-400',
+  success: 'text-teal-400',
   error: 'text-red-400',
   info: 'text-sky-400',
 }

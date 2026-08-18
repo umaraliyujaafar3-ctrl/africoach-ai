@@ -81,7 +81,7 @@ export default function Dashboard() {
   const stats = [
     { label: 'Interviews Completed', value: String(reports.length), icon: Mic2, tone: 'bg-sunrise-50 text-sunrise-600' },
     { label: 'Avg Confidence Score', value: `${avgScore('confidence')}/100`, icon: Sparkles, tone: 'bg-sky-50 text-sky-600' },
-    { label: 'Avg Communication Score', value: `${avgScore('communication')}/100`, icon: TrendingUp, tone: 'bg-emerald-50 text-emerald-600' },
+    { label: 'Avg Communication Score', value: `${avgScore('communication')}/100`, icon: TrendingUp, tone: 'bg-teal-50 text-teal-600' },
     { label: 'Current Streak', value: `${streak} ${streak === 1 ? 'day' : 'days'}`, icon: Flame, tone: 'bg-amber-50 text-amber-600' },
   ]
 
@@ -93,7 +93,7 @@ export default function Dashboard() {
         className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
       >
         <div>
-          <h2 className="font-display text-2xl font-bold text-ink-950">Welcome back, {firstName} 👋</h2>
+          <h2 className="font-display text-2xl font-bold text-ink-950">Welcome back, {firstName}</h2>
           <p className="mt-1 text-sm text-ink-500">{motivational}</p>
         </div>
         <Button size="lg" onClick={() => navigate('/interview/setup')}>
@@ -247,7 +247,7 @@ export default function Dashboard() {
               {latest ? (
                 <div className="mt-4 space-y-4">
                   <div>
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">Strong</p>
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-teal-600">Strong</p>
                     <div className="flex flex-wrap gap-1.5">
                       {strongAreas.length ? (
                         strongAreas.map((a) => (
@@ -311,7 +311,7 @@ export default function Dashboard() {
                     className={cn(
                       'flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-bold',
                       r.overallScore >= 70
-                        ? 'bg-emerald-50 text-emerald-600'
+                        ? 'bg-teal-50 text-teal-600'
                         : r.overallScore >= 55
                           ? 'bg-sunrise-50 text-sunrise-600'
                           : 'bg-red-50 text-red-600',

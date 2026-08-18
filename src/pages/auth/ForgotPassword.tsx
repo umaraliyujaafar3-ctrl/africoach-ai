@@ -28,7 +28,7 @@ export default function ForgotPassword() {
     <AuthLayout>
       {sent ? (
         <div className="text-center">
-          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-teal-50 text-teal-600">
             <CheckCircle2 className="h-7 w-7" aria-hidden="true" />
           </span>
           <h1 className="mt-5 font-display text-2xl font-bold text-ink-950">Check your inbox</h1>

@@ -26,7 +26,7 @@ function headline(score: number) {
 }
 
 function scoreTone(score: number) {
-  if (score >= 70) return 'text-emerald-600'
+  if (score >= 70) return 'text-teal-600'
   if (score >= 55) return 'text-sunrise-600'
   return 'text-red-600'
 }
@@ -129,7 +129,7 @@ export default function Feedback() {
               </div>
             </div>
             <div className="text-left">
-              <p className="flex items-center gap-2 text-sm font-semibold text-emerald-400">
+              <p className="flex items-center gap-2 text-sm font-semibold text-teal-400">
                 <TrendingUp className="h-4 w-4" aria-hidden="true" /> Overall score
               </p>
               <p className="mt-2 text-sm text-ink-300">
@@ -160,14 +160,14 @@ export default function Feedback() {
             </ul>
           </div>
           <div className="space-y-4">
-            <div className="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-4">
-              <p className="flex items-center gap-2 text-sm font-semibold text-emerald-700">
+            <div className="rounded-2xl border border-teal-100 bg-teal-50/60 p-4">
+              <p className="flex items-center gap-2 text-sm font-semibold text-teal-700">
                 <ArrowUp className="h-4 w-4" aria-hidden="true" /> Strengths
               </p>
               <ul className="mt-3 space-y-2">
                 {report.strengths.map((s) => (
                   <li key={s} className="flex gap-2 text-sm text-ink-700">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-500" />
                     {s}
                   </li>
                 ))}
@@ -213,7 +213,7 @@ export default function Feedback() {
                   <span
                     className={cn(
                       'flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-bold',
-                      q.score >= 70 ? 'bg-emerald-50 text-emerald-600' : q.score >= 55 ? 'bg-sunrise-50 text-sunrise-600' : 'bg-red-50 text-red-600',
+                      q.score >= 70 ? 'bg-teal-50 text-teal-600' : q.score >= 55 ? 'bg-sunrise-50 text-sunrise-600' : 'bg-red-50 text-red-600',
                     )}
                   >
                     {q.score}

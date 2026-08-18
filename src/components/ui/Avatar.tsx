@@ -18,7 +18,7 @@ const sizeClasses = {
 const palette = [
   'bg-sunrise-500',
   'bg-ink-700',
-  'bg-emerald-600',
+  'bg-teal-600',
   'bg-sky-600',
   'bg-purple-600',
 ]

@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply bg-white text-slate-800 font-sans antialiased;
+    @apply bg-ink-50 text-ink-800 font-sans antialiased;
   }
 
   h1,
@@ -26,6 +26,6 @@
   }
 
   ::selection {
-    @apply bg-orange-500/20 text-orange-900;
+    @apply bg-sunrise-500/20 text-sunrise-900;
   }
 }

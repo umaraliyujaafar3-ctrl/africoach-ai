@@ -21,7 +21,7 @@ function formatDuration(sec: number) {
 }
 
 function scoreTone(score: number) {
-  if (score >= 70) return 'bg-emerald-50 text-emerald-600'
+  if (score >= 70) return 'bg-teal-50 text-teal-600'
   if (score >= 55) return 'bg-sunrise-50 text-sunrise-600'
   return 'bg-red-50 text-red-600'
 }

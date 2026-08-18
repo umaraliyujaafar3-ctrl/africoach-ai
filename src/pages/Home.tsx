@@ -217,7 +217,7 @@ export default function Home() {
       <main>
         <section className="relative overflow-hidden bg-gradient-to-b from-sunrise-50 via-white to-white pt-28 pb-16 sm:pt-36 sm:pb-24">
           <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-sunrise-200/40 blur-3xl" aria-hidden="true" />
-          <div className="pointer-events-none absolute top-40 -left-24 h-80 w-80 rounded-full bg-emerald-100/40 blur-3xl" aria-hidden="true" />
+          <div className="pointer-events-none absolute top-40 -left-24 h-80 w-80 rounded-full bg-teal-100/40 blur-3xl" aria-hidden="true" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
@@ -265,7 +265,7 @@ export default function Home() {
                     <p className="text-xs text-ink-500">HR · Behavioral · Text mode</p>
                   </div>
                   <Badge tone="success">
-                    <span className="mr-1 inline-block h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="mr-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-500" />
                     Live
                   </Badge>
                 </div>
@@ -470,7 +470,7 @@ export default function Home() {
             <Reveal>
               <div className="relative overflow-hidden rounded-3xl bg-ink-950 px-6 py-16 text-center shadow-lift sm:px-16">
                 <div className="pointer-events-none absolute -top-20 right-0 h-72 w-72 rounded-full bg-sunrise-500/20 blur-3xl" aria-hidden="true" />
-                <div className="pointer-events-none absolute -bottom-20 left-0 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl" aria-hidden="true" />
+                <div className="pointer-events-none absolute -bottom-20 left-0 h-72 w-72 rounded-full bg-teal-500/10 blur-3xl" aria-hidden="true" />
                 <h2 className="relative font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
                   Ready to walk into your next interview with confidence?
                 </h2>

@@ -1,10 +1,6 @@
 import { useId, useState } from 'react'
-import { motion } from 'framer-motion'
 import {
   Bell,
-  Check,
-  CreditCard,
-  Crown,
   Lock,
   Save,
   Shield,
@@ -13,7 +9,6 @@ import {
 } from 'lucide-react'
 import {
   Avatar,
-  Badge,
   Button,
   Card,
   Input,
@@ -41,7 +36,7 @@ export default function Settings() {
         <Avatar name="A" className="h-12 w-12 rounded-2xl" size="lg" />
         <div>
           <h2 className="font-display text-lg font-bold text-ink-900">Account settings</h2>
-          <p className="text-sm text-ink-500">Manage your profile, preferences and plan.</p>
+          <p className="text-sm text-ink-500">Manage your profile and preferences.</p>
         </div>
       </div>
 
@@ -49,7 +44,6 @@ export default function Settings() {
         tabs={[
           { id: 'profile', label: 'Profile', icon: <UserRound className="h-4 w-4" aria-hidden="true" /> },
           { id: 'preferences', label: 'Preferences', icon: <Bell className="h-4 w-4" aria-hidden="true" /> },
-          { id: 'plan', label: 'Plan & Billing', icon: <CreditCard className="h-4 w-4" aria-hidden="true" /> },
           { id: 'account', label: 'Account', icon: <Shield className="h-4 w-4" aria-hidden="true" /> },
         ]}
         value={activeTab}
@@ -62,9 +56,6 @@ export default function Settings() {
       </TabPanel>
       <TabPanel id={id} tabId="preferences" activeTab={activeTab}>
         <PreferencesTab onSaved={flashSaved} />
-      </TabPanel>
-      <TabPanel id={id} tabId="plan" activeTab={activeTab}>
-        <PlanTab />
       </TabPanel>
       <TabPanel id={id} tabId="account" activeTab={activeTab}>
         <AccountTab />
@@ -274,91 +265,6 @@ function PreferencesTab({ onSaved }: { onSaved: () => void }) {
         <div className="flex justify-end px-5 pb-5">
           <Button onClick={onSaved}>
             <Save className="mr-2 h-4 w-4" aria-hidden="true" /> Save preferences
-          </Button>
-        </div>
-      </Card>
-    </div>
-  )
-}
-
-function PlanTab() {
-  const plan = useSettingsStore((s) => s.plan)
-  const setPlan = useSettingsStore((s) => s.setPlan)
-  const used = useSettingsStore((s) => s.interviewsUsedThisMonth)
-  const freeLimit = 5
-
-  return (
-    <div className="grid gap-5 lg:grid-cols-2">
-      <Card className="p-5" hoverable>
-        <div className="flex items-center justify-between">
-          <p className="font-semibold text-ink-900">Free plan</p>
-          <Badge tone={plan === 'Free' ? 'primary' : 'neutral'}>
-            {plan === 'Free' ? 'Current plan' : 'Available'}
-          </Badge>
-        </div>
-        <p className="mt-1 text-sm text-ink-500">Perfect for getting started.</p>
-        <ul className="mt-4 space-y-2 text-sm text-ink-700">
-          <li className="flex items-center gap-2">
-            <Check className="h-4 w-4 text-emerald-500" aria-hidden="true" /> 5 practice interviews per month
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="h-4 w-4 text-emerald-500" aria-hidden="true" /> Feedback reports
-          </li>
-          <li className="flex items-center gap-2">
-            <Check className="h-4 w-4 text-emerald-500" aria-hidden="true" /> Career assistant chat
-          </li>
-        </ul>
-        <div className="mt-5">
-          <div className="mb-1.5 flex justify-between text-xs text-ink-500">
-            <span>Used this month</span>
-            <span>
-              {used}/{freeLimit}
-            </span>
-          </div>
-          <div className="h-2 overflow-hidden rounded-full bg-ink-100">
-            <motion.div
-              className="h-full rounded-full bg-sunrise-500"
-              initial={false}
-              animate={{ width: `${Math.min(100, (used / freeLimit) * 100)}%` }}
-            />
-          </div>
-        </div>
-      </Card>
-
-      <Card className="overflow-hidden border-sunrise-200">
-        <div className="bg-gradient-to-br from-sunrise-400 to-sunrise-600 p-5 text-white">
-          <div className="flex items-center justify-between">
-            <p className="flex items-center gap-2 font-semibold">
-              <Crown className="h-4 w-4" aria-hidden="true" /> Pro plan
-            </p>
-            <Badge className="bg-white/20 text-white">Most popular</Badge>
-          </div>
-          <p className="mt-3 text-2xl font-bold">
-            $9<span className="text-sm font-medium text-white/80">/month</span>
-          </p>
-        </div>
-        <div className="p-5">
-          <ul className="space-y-2 text-sm text-ink-700">
-            <li className="flex items-center gap-2">
-              <Check className="h-4 w-4 text-sunrise-500" aria-hidden="true" /> Unlimited interviews
-            </li>
-            <li className="flex items-center gap-2">
-              <Check className="h-4 w-4 text-sunrise-500" aria-hidden="true" /> Voice interviews
-            </li>
-            <li className="flex items-center gap-2">
-              <Check className="h-4 w-4 text-sunrise-500" aria-hidden="true" /> Detailed AI coaching
-            </li>
-            <li className="flex items-center gap-2">
-              <Check className="h-4 w-4 text-sunrise-500" aria-hidden="true" /> CV reviews
-            </li>
-          </ul>
-          <Button
-            className="mt-5 w-full"
-            variant={plan === 'Pro' ? 'secondary' : 'primary'}
-            disabled={plan === 'Pro'}
-            onClick={() => setPlan('Pro')}
-          >
-            {plan === 'Pro' ? 'Current plan' : 'Upgrade to Pro'}
           </Button>
         </div>
       </Card>

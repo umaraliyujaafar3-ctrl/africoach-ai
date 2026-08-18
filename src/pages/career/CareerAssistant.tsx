@@ -151,13 +151,13 @@ export default function CareerAssistant() {
         <div className="flex items-center gap-3 border-b border-ink-100 px-5 py-3.5">
           <span className="relative flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-sunrise-400 to-sunrise-600 text-white">
             <UserRound className="h-5 w-5" aria-hidden="true" />
-            <span className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full border-2 border-white bg-emerald-500" />
+            <span className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full border-2 border-white bg-teal-500" />
           </span>
           <div>
-            <p className="text-sm font-semibold text-ink-900">Ada · Career Coach</p>
-            <p className="text-xs text-emerald-600">Online · replies instantly</p>
+            <p className="text-sm font-semibold text-ink-900">aleeu · Career Coach</p>
+            <p className="text-xs text-teal-600">Online · replies instantly</p>
           </div>
-          <span className="ml-auto hidden rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 sm:block">
+          <span className="ml-auto hidden rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 sm:block">
             Free plan · always on
           </span>
         </div>

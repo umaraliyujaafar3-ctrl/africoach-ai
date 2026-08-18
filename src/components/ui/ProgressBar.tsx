@@ -11,7 +11,7 @@ export interface ProgressBarProps {
 
 const toneClasses = {
   primary: 'bg-sunrise-500',
-  success: 'bg-emerald-500',
+  success: 'bg-teal-500',
   warning: 'bg-amber-500',
   danger: 'bg-red-500',
 }
