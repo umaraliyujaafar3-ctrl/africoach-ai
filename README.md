@@ -89,7 +89,7 @@ AFRICOACH AI includes a dedicated **Career Assistant** section intended to help 
 Users can review previous interview sessions and track their progress over time.
 
 ### History Screenshot
-![Interview History](screenshots/interview-history.png)
+![Interview History](screenshots/history.png)
 
 ---
 
