@@ -76,12 +76,11 @@ This allows users to see their development instead of treating every interview s
 ---
 
 ### 💼 Career Assistant
-![C
-
 
 AFRICOACH AI includes a dedicated **Career Assistant** section intended to help users with career-related questions and preparation.
 
 ### Career Assistant Screenshot
+![Career Assistant](screenshots/career-assistant.png)
 
 ---
 
@@ -90,6 +89,7 @@ AFRICOACH AI includes a dedicated **Career Assistant** section intended to help 
 Users can review previous interview sessions and track their progress over time.
 
 ### History Screenshot
+![Interview History](screenshots/interview-history.png)
 
 ---
 
@@ -98,6 +98,7 @@ Users can review previous interview sessions and track their progress over time.
 The platform includes a settings section where users can manage their application preferences.
 
 ### Settings Screenshot
+![Settings](screenshots/settings.png)
 
 ---
 
@@ -118,27 +119,22 @@ The current application includes several major pages:
 ## 🖼️ Application Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
 
 The dashboard provides a central overview of the user's interview preparation progress, including completed interviews, confidence, communication performance, streaks, and progress over time.
 
 ### Practice Interview
-![Practice Interview](screenshots/practice-interview.png)
 
 The practice interview page provides an interactive environment where users can go through interview questions one at a time.
 
 ### Career Assistant
-![Career Assistant](screenshots/career-assistant.png)
 
 The Career Assistant provides a dedicated space for career-related support.
 
 ### Interview History
-![Interview History](screenshots/interview-history.png)
 
 The History page allows users to review their previous interview activities and monitor their development.
 
 ### Settings
-![Settings](screenshots/settings.png)
 
 The Settings page provides controls for managing the application experience.
 
